@@ -14,7 +14,7 @@ public class MainController {
 		return "login";
 	}
 	
-	@PostMapping("/validacion")
+	@PostMapping("/validacion")  //CREDENCIALES ->  Usuario: admin	Contrasenia: root
 	public String procesarForm(User user) {
 		if(user.getUsername().equals("admin") && user.getPassword().equals("root")) {
 			return "mostrarMensajeV";
